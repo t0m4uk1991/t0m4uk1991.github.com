@@ -1,0 +1,82 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	height: auto;
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+	height: 100%;
+	width: 100%;
+}
+
+footer{
+	bottom: 10px;
+	width: auto;
+	position: relative;
+}
+
+span span{
+	display: inline;
+}
+
+.sidroverlay {
+	position:absolute;
+	top:0;
+	left:0;
+	background:#fff;
+	opacity:0;
+	width: 100%;
+	height:100%;
+	cursor:pointer;
+}
+
+.content{
+	padding: 30px;
+}
+
+.footer-content{
+	margin: 25px;
+	font-size: 10px;
+}
+
+.site-name{
+	font-size: 1.5em;
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+	display: inline-block;
+	height: 2em;
+	line-height: 2em;
+	position: relative;
+	vertical-align: middle;
+	width: 2em;
+}
+
+.inner-content{
+
+}
+
+.post-title a{
+	text-decoration: none;
+}
+
+.post-date{
+	padding-left: 50px;
+
+}
+
+.posts-list{
+	width: 100%;
+	vertical-align: middle;
+}
+
+.back-to-top{
+	position: fixed; 
+	bottom: 5px; 
+	right: 5px; 
+	opacity: 1;
+	cursor: pointer;
+	z-index: 100500;
+}
+
+.center-table{ margin: 0px auto; }
+
+div.image {
+   content:url( /assets/themes/minimalist/img/rage-face.png);
+}​
