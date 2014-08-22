@@ -1,29 +1,49 @@
-<div class="justify-text">  
-
+<div class="post-navigation">
+  {% if page.previous %}
+    <a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">
+      <i class="fa fa-caret-left fa-2x"></i>
+    </a>
+  {% endif %}
+    <a href="/blog.html">
+      <i class="fa fa-th-list fa-rotate-180 fa-2x"></i>
+    </a>
+  {% if page.next %}
+    <a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">
+      <i class="fa fa-caret-right fa-2x"></i>
+    </a>
+  {% endif %}
+</div>
   <div class="row post-full">
     <div class="col-xs-12">
       <div class="content">
       <div class="page-header centered-text">
         <h1>{{ page.title }}</h1>
+          {% unless page.categories == empty %}
+            {% for category in page.categories %} 
+              <span class="tag">
+                <i class="fa fa-tag"></i>
+                <a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category }}-ref">
+              {{ category | join: "/" }} 
+                </a>
+              </span>
+            {% endfor %}
+          {% endunless %}  
+          {% unless page.tags == empty %}
+            {% for tag in page.tags %}
+              <span class="tag">
+                <i class="fa fa-tag"></i>
+                <a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref">{{ tag }}</a>
+              </span>
+            {% endfor %}
+          {% endunless %}  
       </div>
-      <div  class="align-text-to-right">
-        {{ page.date | date_to_long_string }}
+      <br/>
+      <div style="post-date">
+        <i class="fa fa-calendar"></i> {{ page.date | date: "%-d %b %Y" }}
       </div>
-      </div class="justify-text">
+      </div>
         {{ content }}
-
-
-      <ul class="pagination">
-      {% if page.previous %}
-        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&laquo; Previous</a></li>
-      {% endif %}
-      {% if page.next %}
-        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &raquo;</a></li>
-      {% endif %}
-      </ul>
-
       </div>
-      <!-- {% include JB/comments %} -->
+      {% include JB/comments %}
     </div>
   </div>
-</div>

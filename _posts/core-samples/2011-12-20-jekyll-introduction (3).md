@@ -1,6 +1,8 @@
 ---
----
 layout: post
+tags:
+- jekyll
+- code
 ---
 {% include JB/setup %}
 
