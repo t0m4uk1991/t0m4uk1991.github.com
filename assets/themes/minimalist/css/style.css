@@ -62,6 +62,8 @@ span span{
 
 .post-title a{
 	text-decoration: none;
+	color: black;
+	font-size: 1.3em;
 }
 
 .posts-list{
@@ -79,8 +81,13 @@ span span{
 }
 
 .center-table{ 
-	width: 80%;
-	margin: 0px auto; 
+	width: 100%;
+	line-height: 1.5em;
+}
+
+table tr{
+	padding-top: 4px;
+	padding-bottom: 4px;
 }
 
 .centrize-content{
@@ -99,7 +106,7 @@ span span{
 }
 
 .post-date{
-	padding: 5px;
+	float: left;
 }
 
 .post-navigation{
