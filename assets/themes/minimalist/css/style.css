@@ -57,6 +57,8 @@ span span{
 .post-title{
 	padding-top: 3px;
 	padding-bottom: 3px;
+	padding-left: 100px;
+	position: relative;
 }
 
 
