@@ -5,31 +5,19 @@ $(document).ready(function() {
       $('#simple-menu').sidr({
           onOpen: function(){
             $('body').append('<div class="sidroverlay"></div>');
-            $.cookie("is_opened", "1");
             $('#simple-menu').fadeOut(500);
         },
           onClose: function(){
             $('.sidroverlay').remove();
-            $.cookie("is_opened", "0");
+
         },
         speed: 500
       });
 
       $(document).on('click','.sidroverlay',function(){
          $.sidr('close');
-         $.cookie("is_opened", "0");
          $('#simple-menu').fadeIn(500);
       });
-
-      (function(){
-        if($.cookie("is_opened") == 1){
-          $.sidr('open');
-          console.log("keep opened");
-        }else{
-          $.sidr('close');
-          console.log("keep closed");
-        }
-      })();
 
       $(document).on('scroll', function(){
         if ($(window).scrollTop() > $(window).height()){
