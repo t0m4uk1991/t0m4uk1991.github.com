@@ -9,7 +9,14 @@ table tr{
 	padding-left: 100px;
 	position: relative;
 }
-
+/*
+.post-title-entry :hover{
+	background: #232323;
+	padding-left: 20%;
+	padding-right: 20%;
+	-webkit-transform: scale(1.2,1.2);
+	-webkit-border-radius: 7px 7px;
+} */
 
 .post-title a{
 	text-decoration: none;

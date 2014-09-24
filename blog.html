@@ -4,6 +4,7 @@ layout: page
 <div class="container">
 	<table cellspacing=5 class="table center-table">
 	  {% for post in site.posts %}
+	  		<div class="post-title-entry">
 	    		<span class="post-date">
 	    			{% assign date_day_month = post.date | date: "%d %b" %}
 	    			{% assign date_year = post.date | date: "%Y" %}
@@ -36,6 +37,7 @@ layout: page
 		          	{% endunless %}  
 	    		</div>
 	    		<br>
+	    	</div>
 	  {% endfor %}
 	</table>
 </div>
