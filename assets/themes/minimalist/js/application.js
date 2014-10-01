@@ -19,6 +19,23 @@ $(document).ready(function() {
          $('#simple-menu').fadeIn(500);
       });
 
+
+      $("#search-button-id").click(function(){
+        $('.back-to-top').click();
+        $(this).fadeOut(500)
+        $("#search-field").fadeIn(500);
+        $("#search-field").focus();
+      });
+
+      $(document).keyup(function(e) {
+          if (e.keyCode == 13 || e.keyCode == 27) { 
+            $("#search-field").val("").change();
+              $("#search-button-id").fadeIn(500);
+              $("#search-field").fadeOut(500);
+          } 
+      });
+
+
       $(document).on('scroll', function(){
         if ($(window).scrollTop() > $(window).height()){
           $('.back-to-top').fadeIn(500);

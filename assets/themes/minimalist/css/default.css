@@ -46,6 +46,13 @@ footer{
 	width: 2em;
 }
 
+#menu-button{
+	position: absolute;
+	position: fixed;
+	top: 32px;
+	left: 32px;
+}
+
 #qr-code{
 	width: 39%;
 	margin: 0 auto; 

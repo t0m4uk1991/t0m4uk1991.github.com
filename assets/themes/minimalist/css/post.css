@@ -4,19 +4,16 @@ table tr{
 }
 
 .post-title{
-	padding-top: 3px;
-	padding-bottom: 3px;
-	padding-left: 100px;
+	padding-left: 125px;
 	position: relative;
+	word-wrap: break-word;
 }
-/*
-.post-title-entry :hover{
-	background: #232323;
-	padding-left: 20%;
-	padding-right: 20%;
-	-webkit-transform: scale(1.2,1.2);
-	-webkit-border-radius: 7px 7px;
-} */
+
+.post-title-entry{
+	width: 100%;
+	float: left;
+	display: inline-block;
+}
 
 .post-title a{
 	text-decoration: none;
@@ -31,8 +28,8 @@ table tr{
 
 .back-to-top{
 	position: fixed; 
-	bottom: 5px; 
-	right: 5px; 
+	bottom: 32px;
+	right: 32px; 
 	opacity: 1;
 	cursor: pointer;
 	z-index: 100500;
@@ -74,4 +71,33 @@ table tr{
 	display: inline;
 	color: black;
 	padding-right: 10px;
+}
+
+.post-next{
+	position: fixed;
+	vertical-align: center;
+	top:50%;
+	bottom: 50%;
+	width: 62px;
+	color: #E8E8E8 !important;
+	-webkit-transform: scaleY(1.5);
+}
+
+.post-next :hover{
+	color: #232323;
+}
+
+.post-prev{
+	position: fixed;
+	vertical-align: center;
+	left: 32px;
+	top:50%;
+	bottom: 50%;
+	width: 62px;
+	color: #E8E8E8 !important;
+	-webkit-transform: scaleY(1.5);
+}
+
+.post-prev :hover{
+	color: #232323;
 }
