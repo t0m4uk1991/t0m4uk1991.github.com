@@ -7,7 +7,8 @@ layout: page
 	</span>
 </div>
 <div class="container" ng-app="posts_manager" ng-controller="posts_controller">
-	<input id="search-field" ng-model="query" type="text" class="form-field hidded-field" placeholder="search by tag name or title">
+	<input id="search-field" ng-model="query" type="text" class="form-field hidded-field" placeholder="Search">
+	<label >search in tytles and tags</label>
 	<div class="center-table">
 	  		{% raw %}
 	  		<div class="post-title-entry" ng-repeat="post in posts | matchesQuery:query">
