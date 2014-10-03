@@ -1,3 +1,51 @@
+html{
+	margin: 0px;
+	padding: 0px;
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+	height: 100%;
+	width: 100%;
+}
+
+footer{
+	bottom: 10px;
+	width: 100%;
+	position: relative;
+}
+
+.sidroverlay {
+	position:absolute;
+	position: fixed;
+	top:0;
+	left:260px;
+	background:#fff;
+	opacity:0;
+	width: 100%;
+	height:100%;
+	cursor:pointer;
+}
+
+.footer-content{
+	margin: 25px;
+	font-size: 10px;
+}
+
+.content{
+	padding: 30px;
+	margin: 0px;
+	height: 100%;
+}
+
+.site-name{
+	font-size: 1.5em;
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+	display: inline-block;
+	height: 2em;
+	line-height: 2em;
+	position: relative;
+	vertical-align: middle;
+	width: 2em;
+}
+
 .form-field[type=text]{
    border-bottom: 0px;
    border-top: 0px;
@@ -7,13 +55,9 @@
    font-size: 16px;
    height: 20px;
    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
-   /*text-align:center;*/
    text-align:left;
    -webkit-border-radius: 0.5px;
     border-radius: 0.5px;
-   /*-webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;*/
-   /*-moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;*/
-   /*box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;*/
    margin-bottom:20px;
    position: fixed;
    -webkit-input-placeholder { font-style:italic; text-decoration:overline; letter-spacing:3px; color:#999; };
@@ -51,4 +95,21 @@
 .not-found-page-bg{
    background: #232323;
    color: #fff
+}
+
+#menu-button{
+	position: absolute;
+	position: fixed;
+	top: 32px;
+	left: 32px;
+}
+
+#qr-code{
+	width: 39%;
+	margin: 0 auto; 
+	border: 4px solid white;
+}
+
+#simple-menu{
+	cursor:pointer;
 }
