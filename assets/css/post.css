@@ -15,6 +15,18 @@ table tr{
 	display: inline-block;
 }
 
+.post-fragment{
+	width: 100%;
+	float: left;
+	display: inline-block;
+	padding: 10px;
+}
+
+.post-fragment-title{
+	position: relative;
+	word-wrap: break-word;
+}
+
 .post-title a{
 	text-decoration: none;
 	color: black;
@@ -42,7 +54,7 @@ table tr{
 
 
 .centrize-content{
-	width: 50%;
+	width: 70%;
 	margin: 0px auto; 
 	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
 	font-size: 12px;

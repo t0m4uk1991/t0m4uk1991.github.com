@@ -1,0 +1,48 @@
+html,body{ 
+  margin:0;
+}
+
+canvas{
+	display:block;
+	vertical-align:bottom;
+}
+
+#particles-js{
+  height:100%;
+  width:100%;
+  background:#232323;
+  z-index: -10;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+#container{
+	padding: 100px 0 60px 100px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	z-index: 10;
+}
+
+#name-id{
+	color: #FFFFFF;
+	font-size: 30px;
+	font-family: 'Oswald', sans-serif;
+	font-style: bold;
+}
+
+#prof-id{
+	color: #FFFFFF;
+	font-family: 'Oswald', sans-serif;
+	padding-bottom: 5px;
+	font-size: 15px;	
+}
+
+#container{
+}
+
+#links-id a{
+	color: white;
+	padding: 7px;
+}
