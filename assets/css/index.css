@@ -27,7 +27,6 @@ canvas{
 
 #name-id{
 	color: #FFFFFF;
-	font-size: 30px;
 	font-family: 'Oswald', sans-serif;
 	font-style: bold;
 }
@@ -35,8 +34,7 @@ canvas{
 #prof-id{
 	color: #FFFFFF;
 	font-family: 'Oswald', sans-serif;
-	padding-bottom: 5px;
-	font-size: 15px;	
+	padding-bottom: 3px;	
 }
 
 #container{
@@ -44,5 +42,5 @@ canvas{
 
 #links-id a{
 	color: white;
-	padding: 7px;
+	padding: 5px;
 }
