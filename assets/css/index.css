@@ -25,24 +25,51 @@ canvas{
 	z-index: 10;
 }
 
-#name-id{
-	color: #FFFFFF;
-	font-family: 'Oswald', sans-serif;
-	font-style: bold;
-	font-size: 3em;
+
+@media (min-width: 540px) {}
+
+@media (min-width: 750px) {}
+
+@media (min-width: 1366px) {
+
+	#name-id{
+		color: #FFFFFF;
+		font-family: 'Oswald', sans-serif;
+		font-style: bold;
+	}
+
+	#prof-id{
+		color: #FFFFFF;
+		font-family: 'Oswald', sans-serif;
+		padding-bottom: 3px;
+	}
+
+	#links-id a{
+		color: white;
+		padding: 5px;
+	}
 }
 
-#prof-id{
-	color: #FFFFFF;
-	font-family: 'Oswald', sans-serif;
-	padding-bottom: 3px;
-	font-size: 1.5em;	
+@media (min-width: 1920px) {
+
+	#name-id{
+		color: #FFFFFF;
+		font-family: 'Oswald', sans-serif;
+		font-style: bold;
+		font-size: 30px;
+	}
+
+	#prof-id{
+		color: #FFFFFF;
+		font-family: 'Oswald', sans-serif;
+		padding-bottom: 3px;
+		font-size: 18px;
+	}
+
+	#links-id a{
+		color: white;
+		padding: 5px;
+	}
+
 }
 
-#container{
-}
-
-#links-id a{
-	color: white;
-	padding: 0.65em;
-}
