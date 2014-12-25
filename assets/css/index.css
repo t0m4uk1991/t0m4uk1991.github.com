@@ -29,12 +29,14 @@ canvas{
 	color: #FFFFFF;
 	font-family: 'Oswald', sans-serif;
 	font-style: bold;
+	font-size: 3em;
 }
 
 #prof-id{
 	color: #FFFFFF;
 	font-family: 'Oswald', sans-serif;
-	padding-bottom: 3px;	
+	padding-bottom: 3px;
+	font-size: 1.5em;	
 }
 
 #container{
@@ -42,5 +44,5 @@ canvas{
 
 #links-id a{
 	color: white;
-	padding: 5px;
+	padding: 0.65em;
 }

@@ -14,32 +14,6 @@
   ga('create', 'UA-57509521-1', 'auto');
   ga('send', 'pageview');
 
-  var updateImages = function(newClassName){
-  	$( ".fa" ).each(function() {
-  			$( this ).removeClass('fa-2x');
-  			$( this ).removeClass('fa-3x');
-  			$( this ).addClass(newClassName);
-	});
-  }
-
-  var updateFonts = function(nameFontSize, positionFontSize){
-  	$("#name-id").css('font-size', nameFontSize + "px");
-  	$("#prof-id").css('font-size', positionFontSize + "px");
-  }
-
-  $(window).resize(function(){
-  	var currentWidth = $(window).width();
-  	if (currentWidth < 1366){
-  		updateImages('fa-3x');
-  		updateFonts(60, 35);
-  	}else if(currentWidth >= 1366 && currentWidth < 1920){
-  		updateImages('fa-2x');
-  		updateFonts(20, 14);
-  	}else{
-  		updateImages('fa-3x');
-  		updateFonts(25, 18);
-  	}
-  });
 </script>
 </head>
 <body>
@@ -51,9 +25,9 @@
 			Software Engineear
 		</div>
 		<div id="links-id">
-			<a href="https://ua.linkedin.com/pub/andriy-tomchuk/46/5a3/33/"><i class="fa fa-linkedin-square"></i></a>
-			<a href="https://github.com/t0m4uk1991"><i class="fa fa-github-square"></i></a>
-			<a href="/blog.html"><i class="fa fa-file-text"></i></a>
+			<a href="https://ua.linkedin.com/pub/andriy-tomchuk/46/5a3/33/"><i class="fa fa-linkedin-square fa-2x"></i></a>
+			<a href="https://github.com/t0m4uk1991"><i class="fa fa-github-square fa-2x"></i></a>
+			<a href="/blog.html"><i class="fa fa-file-text fa-2x"></i></a>
 		</div>
 	</div>
 	<div id="particles-js"></div>
