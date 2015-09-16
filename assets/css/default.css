@@ -1,119 +1,73 @@
-html{
-	margin: 0px;
-	padding: 0px;
-	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
-	height: 100%;
-	width: 100%;
+body {
+    margin: 0;
+    font-family: Merriweather, Helvetica, Arial, sans-serif;;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
 }
 
-footer{
-	bottom: 10px;
-	width: 100%;
-	position: relative;
+p {
+    text-align: justify;
 }
 
-.sidroverlay {
-	position:absolute;
-	position: fixed;
-	top:0;
-	left:260px;
-	background:#fff;
-	opacity:0;
-	width: 100%;
-	height:100%;
-	cursor:pointer;
+a {
+    color: #0074d9;
+    text-decoration: none;
 }
 
-.footer-content{
-	margin: 25px;
-	font-size: 10px;
+a:hover {
+        text-decoration: underline;
 }
 
-.content{
-	padding: 30px;
-	margin: 0px;
-	height: 100%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
+blockquote {
+    font-style: italic;
+    padding-left: 1rem;
+    border-left: 3px solid #ddd;
 }
 
-.site-name{
-	font-size: 1.5em;
-	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
-	display: inline-block;
-	height: 2em;
-	line-height: 2em;
-	position: relative;
-	vertical-align: middle;
-	width: 2em;
+img {
+    max-width: 100%;
 }
 
-.form-field[type=text]{
-   border-bottom: 0px;
-   border-top: 0px;
-   border-left: 0px;
-   border-right: 0px;
-   padding:15px;
-   font-size: 16px;
-   height: 20px;
-   font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
-   text-align:left;
-   -webkit-border-radius: 0.5px;
-    border-radius: 0.5px;
-   margin-bottom:20px;
-   position: fixed;
-   -webkit-input-placeholder { font-style:italic; text-decoration:overline; letter-spacing:3px; color:#999; };
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    max-width: 100%;
+    width: 100%;
 }
 
-.form-field[type=text]:focus{
-   outline-width: 0;
+th,
+td {
+    padding: 0.5rem;
+    line-height: inherit;
 }
 
-.hidded-field{
-   display: none;
+th {
+    text-align: left;
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
 }
 
-#search-field{
-   position: absolute;
-   font-size: 2em;
-   top: 32px;
-   width: 50%; 
+td {
+    vertical-align: top;
+    border-bottom: 1px solid #ddd;
 }
-
-.form-field:focus {
-   	background: #fff;
-   	color: #232323;
+pre {
+    padding: 1.25rem;
+    overflow-x: auto;
 }
-
-.search-button{
-	position: fixed; 
-	top: 38px; 
-	right: 38px; 
-	opacity: 1;
-	cursor: pointer;
-	z-index: 100500;
+code {
+    font-family: 'Courier New',Consolas,monopace;
 }
-
-.not-found-page-bg{
-   background: #232323;
-   color: #fff
-}
-
-#menu-button{
-	position: absolute;
-	position: fixed;
-	top: 32px;
-	left: 32px;
-}
-
-#qr-code{
-	width: 39%;
-	margin: 0 auto; 
-	border: 4px solid white;
-}
-
-#simple-menu{
-	cursor:pointer;
-}
-
-#fixed_panel{
-
+hr {
+    border: none;
+    border-top: 2px solid #ddd;
 }

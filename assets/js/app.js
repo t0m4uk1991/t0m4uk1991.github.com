@@ -1,1 +1,0 @@
-angular.module('posts_manager', ['posts_filter', 'posts_controller']);

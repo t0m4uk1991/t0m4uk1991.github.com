@@ -1,18 +1,79 @@
 <!DOCTYPE html><html class=''>
 <head><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="canonical" href="http://codepen.io/lbebber/pen/ypgql" />
 
-<link rel='stylesheet' href='http://s.codepen.io/assets/reset/normalize.css'><script src='http://s.codepen.io/assets/libs/prefixfree.min.js'></script>
+
 <style class="cp-pen-styles">body {
-  background: black;
+  background: white;
   font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
 }
 
-.glitch {
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
   color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+.glitch {
+  color: black;
   font-size: 100px;
   position: relative;
   width: 15%;
   margin: 0 auto;
+}
+
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+.glitch-text:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 2s infinite linear alternate-reverse;
+}
+
+
+.glitch-text {
+  color: black;
+  font-size: 30px;
+  position: relative;
+  width: 15%;
+  margin: 0 auto;
+}
+
+.glitch-text:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 3s infinite linear alternate-reverse;
 }
 
 @keyframes noise-anim {
@@ -80,18 +141,7 @@
     clip: rect(46px, 9999px, 28px, 0);
   }
 }
-.glitch:after {
-  content: attr(data-text);
-  position: absolute;
-  left: 2px;
-  text-shadow: -1px 0 red;
-  top: 0;
-  color: white;
-  background: black;
-  overflow: hidden;
-  clip: rect(0, 900px, 0, 0);
-  animation: noise-anim 2s infinite linear alternate-reverse;
-}
+
 
 @keyframes noise-anim-2 {
   0% {
@@ -158,37 +208,11 @@
     clip: rect(93px, 9999px, 85px, 0);
   }
 }
-.glitch:before {
-  content: attr(data-text);
-  position: absolute;
-  left: -2px;
-  text-shadow: 1px 0 blue;
-  top: 0;
-  color: white;
-  background: black;
-  overflow: hidden;
-  clip: rect(0, 900px, 0, 0);
-  animation: noise-anim-2 3s infinite linear alternate-reverse;
-}
-
-#archive_button{
-  position: absolute;
-  bottom: 25px;
-  left: 25px;
-  color: white;
-  font-size: 1.2em;
-  text-decoration: none;
-}
 
 </style></head><body>
 <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
 <div style="padding-top:15%;">
 <div class="glitch" data-text="404">404</div> 
-</div>
-<div>
-<img src="/assets/img/rage-face.jpg" style="position:absolute; bottom:0px; right:0px; width:530px; height:309px;z-index:100500;"/>
-</div>
-<div id="archive_button">
-  <a href="/archive.html">ARCHIVE</a>
+<div class="glitch-text" data-text="NOT_FOUND">NOT_FOUND</div> 
 </div>
 </body></html>
