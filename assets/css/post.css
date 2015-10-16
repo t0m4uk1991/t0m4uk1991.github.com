@@ -27,9 +27,14 @@ main {
     border-bottom: 2px solid #da4939;
 }
 
+.orange-div{
+    color: #da4939;
+}
+
 .posts {
     list-style: none;
     padding: 0;
+    background-color: rgba(255,255,255,0.8);
 }
 
 .posts > li {
@@ -50,6 +55,7 @@ main {
 
 .post{
     position: relative;
+    background-color: rgba(255,255,255,0.8);
 }
 
 .post .post-header{
@@ -64,6 +70,14 @@ main {
     font-size: 0.875rem;
 }
 
+.about{
+    background-color: rgba(255,255,255,0.8);
+}
+
 .about-section{
     font-size: 0.875rem;
+}
+
+.wellcome{
+    margin-top: 30px;   
 }
