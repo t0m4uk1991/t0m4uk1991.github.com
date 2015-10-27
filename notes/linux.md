@@ -1,22 +1,25 @@
 ---
-layout: default
+layout: notes
 ---
 
-
-Notes
+Content
 =================
-
-  * [Linux](#linux)
+  
+  * [terminal](#terminal)
+  * [awk](#awk)
   * [BASH](#bash)
   * [Perl](#perl)
   * [Python](#python)
-  * [SQL](#sql)
 
-Linux
+terminal
 ============
 {% gist cfc8944617d3d4d35215 %}
 
 {% gist d9c0b1c1a310f8456c6b %}
+
+
+awk
+============
 
 Bash
 ============
@@ -33,7 +36,3 @@ def foo
   puts 'foo'
 end
 {% endhighlight %}
-
-SQL
-============
-{% gist 7fe99702f73d1feee325 %}

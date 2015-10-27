@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="blog,it">
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/application.css">
+        <link rel="icon" type="img/ico" href="/favicon.ico">
+        <title>{{ site.title }}</title>
+    </head>
+    <body>
+        <aside class="sidebar">
+            <div class="topics">
+                <center>
+                    <h1 class="site-title">              
+                        <a href="{{ site.baseurl }}/">
+                            <span class="orange-div">{</span>
+                            <span>void</span>
+                            <span class="orange-div">}</span>
+                        </a>
+                    </h1>
+                </center>
+                <ul class="notes-list">
+                    <li>
+                        <span class="{% if page.url == '/notes/linux.html' %}display-sign{% else %}do-not-display-sign{% endif %}">></span>
+                        <a href="{{ site.baseurl }}/notes/linux.html">linux</a>
+                    </li>
+                    <li>
+                        <span class="{% if page.url == '/notes/bash.html' %}display-sign{% else %}do-not-display-sign{% endif %}">></span>
+                        <a href="{{ site.baseurl }}/notes/bash.html">bash</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <section class="content">
+            {{content}}
+        </section>
+    </body>
+</html>
