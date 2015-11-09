@@ -1,5 +1,6 @@
 ---
 layout: post
+locale: en
 tags:
 - jekyll
 - code

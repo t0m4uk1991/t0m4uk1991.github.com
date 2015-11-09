@@ -1,0 +1,20 @@
+root: 
+ en:
+
+ ua: /ua
+ 
+i18n:
+ en:
+  - 
+   title: /home
+   url: /index.html
+
+  - 
+   title: /notes
+   url: /notes.html
+
+  - 
+   title: /about
+   url: /about.html
+
+ ua:

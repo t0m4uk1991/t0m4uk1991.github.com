@@ -1,11 +1,11 @@
 ---
 layout: default
-locale: en
+locale: ua
 ---
 <div>
       <ul class="posts">
         {% for post in site.posts %}
-            {% if post.locale == 'en'%}
+            {% if post.locale == 'ua'%}
                 <li><span>{{ post.date | date: site.date_format }}</span><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
             {% endif%}
         {% endfor %}
