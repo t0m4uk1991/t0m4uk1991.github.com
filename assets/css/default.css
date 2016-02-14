@@ -14,9 +14,9 @@ a {
     color: #000;
     text-decoration: none;
 }
-
-a:hover {
-        text-decoration: underline;
+.site-nav a:hover {
+        border-bottom: 1px solid #da4939;
+        text-decoration: none;
 }
 
 h1,

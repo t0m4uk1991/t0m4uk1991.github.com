@@ -1,32 +1,14 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="blog,it">
-        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/application.css">
-        <link rel="icon" type="img/ico" href="/favicon.ico">
-        <title>{{ site.title }}</title>
-    </head>
-    <body>
+---
+layout: default
+---    
         <aside class="sidebar">
             <div class="topics">
-                <center>
-                    <h1 class="site-title">              
-                        <a href="{{ site.baseurl }}/">
-                            <span class="orange-div">{</span>
-                            <span>void</span>
-                            <span class="orange-div">}</span>
-                        </a>
-                    </h1>
-                </center>
                 <ul class="notes-list">
                     <li>
-                        <span class="{% if page.url == '/notes/linux.html' %}display-sign{% else %}do-not-display-sign{% endif %}">></span>
-                        <a href="{{ site.baseurl }}/notes/linux.html">linux</a>
+                        <a href="{{ site.baseurl }}/notes/linux/" class="{% if page.url == '/notes/linux/' %}active-page{% else %}not-active-page{% endif %}"> linux </a>
                     </li>
                     <li>
-                        <span class="{% if page.url == '/notes/bash.html' %}display-sign{% else %}do-not-display-sign{% endif %}">></span>
-                        <a href="{{ site.baseurl }}/notes/bash.html">bash</a>
+                        <a href="{{ site.baseurl }}/notes/ruby/" class="{% if page.url == '/notes/ruby/' %}active-page{% else %}not-active-page{% endif %}"> ruby </a>
                     </li>
                 </ul>
             </div>
@@ -34,5 +16,3 @@
         <section class="content">
             {{content}}
         </section>
-    </body>
-</html>

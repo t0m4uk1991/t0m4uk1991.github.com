@@ -14,7 +14,7 @@
     <div id="content">
         <main>
             <header class="site-header">
-                <h1 class="site-title"><a href="{{ site.data.locales.root[page.locale] }}/">
+                <h1 class="site-title"><a href="{{ site.baseurl }}/">
 
                     <span class="orange-div">{</span>
                     <span>{{site.title}}</span>
@@ -22,11 +22,10 @@
 
                 </a></h1>
                 <nav class="site-nav">
-                    {% for locale in site.data.locales.i18n[page.locale] %}
-                        <a href="{{ site.baseurl }}{{locale.url}}" class="{% if page.url == locale.url %}active{% endif %}">
-                            {{ locale.title }}
-                        </a>
-                    {% endfor %}
+                     <a href="{{ site.baseurl }}/index" class="{% if page.url == '/' %}active-page{% endif %}"> home</a>
+                     
+                     <a href="{{ site.baseurl }}/notes/linux" class="{% if ((page.url == '/notes/linux/') or (page.url == '/notes/ruby/')) %}active-page{% endif %}"> notes</a>
+                     <a href="{{ site.baseurl }}/about" class="{% if page.url == '/about/' %}active-page{% endif %}"> about</a>
                 </nav>
             </header>
             {{ content }}
