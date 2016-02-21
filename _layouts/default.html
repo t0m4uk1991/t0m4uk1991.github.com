@@ -16,15 +16,15 @@
             <header class="site-header">
                 <h1 class="site-title"><a href="{{ site.baseurl }}/">
 
-                    <span class="orange-div">{</span>
+                    <span class="orange-div">(</span>
                     <span>{{site.title}}</span>
-                    <span class="orange-div">}</span>
+                    <span class="orange-div">)</span>
 
                 </a></h1>
                 <nav class="site-nav">
                      <a href="{{ site.baseurl }}/index" class="{% if page.url == '/' %}active-page{% endif %}"> home</a>
                      
-                     <a href="{{ site.baseurl }}/notes/linux" class="{% if ((page.url == '/notes/linux/') or (page.url == '/notes/ruby/')) %}active-page{% endif %}"> notes</a>
+                     <a href="{{ site.baseurl }}/notes/linux" class="{% if ((page.url == '/notes/linux/') or (page.url == '/notes/ruby/') or (page.url == '/notes/lisp/')) %}active-page{% endif %}"> notes</a>
                      <a href="{{ site.baseurl }}/about" class="{% if page.url == '/about/' %}active-page{% endif %}"> about</a>
                 </nav>
             </header>

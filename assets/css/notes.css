@@ -40,9 +40,7 @@ center a:active{
 }
 
 .topics{
-    padding-right: 20px;
-    margin-left: -120px;
-    padding-top: 20px;
+    margin-left: -100px;
 }
 
 .content{
@@ -60,4 +58,8 @@ center a:active{
 #    display: none;
     border-bottom: none;
     text-decoration: none;
+}
+
+pre code{
+    font-size: small;
 }

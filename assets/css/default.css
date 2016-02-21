@@ -61,7 +61,9 @@ td {
     border-bottom: 1px solid #ddd;
 }
 pre {
-    padding: 1.25rem;
+    padding-left: 1.25rem;
+    padding-top:0;
+    margin-top:0;
     overflow-x: auto;
 }
 code {
