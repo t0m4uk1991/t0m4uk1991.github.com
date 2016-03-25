@@ -5,6 +5,7 @@ layout: notes
 This is my lisp notes from Structure and Interpretation of Computer Programs*
 
 {% highlight lisp %}
+;base syntax constructions
 
 (define x 10)
 

@@ -87,3 +87,9 @@ hr {
     position: relative;
     z-index: 100;
 }
+
+.equation {
+    padding-bottom:  1rem;
+    padding-top:     1rem;
+    text-align:      center;
+}

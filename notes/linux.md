@@ -5,13 +5,30 @@ layout: notes
 Content
 =================
   
-  * [network tools](#networktools)
+  * [usefull tools and commands](#usefulltoolsandcommands)
   * [awk](#awk)
   * [vim](#vim)
 
-network tools
+usefull tools and commands
 ============
+{% highlight bash %}
 
+#system
+uptime #show average load in 1, 5 and 15 minutes
+top or htop #to show more detail info about processes
+ps aux #get list of processes 
+lsb_release -a #get distro data
+
+#fs
+df -h #show Disk_Free_space in human readable format
+df -i #allow to detect out of inodes problem
+du -h #show files size in human readable format
+mount -o remount,rw /home #to fix read only fs problem
+
+#network
+nslookup or dig #to get DNS data
+sudo netstat -tlpn #get listening on ports processe's names and PIDs 
+{% endhighlight %}
 
 awk
 ============
