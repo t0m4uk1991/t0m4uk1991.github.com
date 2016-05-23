@@ -28,6 +28,7 @@ mount -o remount,rw /home #to fix read only fs problem
 #network
 nslookup or dig #to get DNS data
 sudo netstat -tlpn #get listening on ports processe's names and PIDs 
+ssh -L <local port>:<remote computer>:<remote port> <user>@<remote ip> #port forwarding
 {% endhighlight %}
 
 awk
