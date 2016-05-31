@@ -14,9 +14,10 @@ a {
     color: #000;
     text-decoration: none;
 }
+
 .site-nav a:hover {
-        border-bottom: 1px solid #da4939;
-        text-decoration: none;
+    border-bottom: 1px solid #da4939;
+    text-decoration: none;
 }
 
 h1,
@@ -27,6 +28,7 @@ h5,
 h6 {
     font-weight: 300;
 }
+
 blockquote {
     font-style: italic;
     padding-left: 1rem;
@@ -37,38 +39,17 @@ img {
     max-width: 100%;
 }
 
-table {
-    border-collapse: separate;
-    border-spacing: 0;
-    max-width: 100%;
-    width: 100%;
-}
-
-th,
-td {
-    padding: 0.5rem;
-    line-height: inherit;
-}
-
-th {
-    text-align: left;
-    vertical-align: bottom;
-    border-bottom: 2px solid #ddd;
-}
-
-td {
-    vertical-align: top;
-    border-bottom: 1px solid #ddd;
-}
 pre {
     padding-left: 1.25rem;
     padding-top:0;
     margin-top:0;
     overflow-x: auto;
 }
+
 code {
     font-family: 'Courier New',Consolas,monopace;
 }
+
 hr {
     border: none;
     border-top: 2px solid #ddd;

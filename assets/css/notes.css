@@ -1,14 +1,8 @@
-body{
-    margin: 0;
-    font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
-}
-
 ul li{
     list-style: none;
 }
 
-ul li a, 
-center a{
+ul li a, center a{
     text-decoration: none;
     color: gray;
 }
@@ -31,7 +25,7 @@ center a:active{
 .sidebar{
     float:right;
     position: fixed;
-    width: 10px;
+    width: 20px;
     height: 100%;
     font-size: 16px;
     text-align: left;
@@ -39,8 +33,12 @@ center a:active{
     color: black;
 }
 
+.notes-list{
+    line-height: 1.75;
+}
+
 .topics{
-    margin-left: -100px;
+    margin-left: -120px;
 }
 
 .content{
@@ -48,14 +46,11 @@ center a:active{
 }
 
 .active-page{
-#    color: #da4939;
     border-bottom: 2px solid #da4939;
     text-decoration: none;
 }
 
 .not-active-page{
-#    color: #333;
-#    display: none;
     border-bottom: none;
     text-decoration: none;
 }

@@ -1,0 +1,21 @@
+---
+layout: ua_default
+---
+<div>
+    <ul class="posts">
+        {% for post in site.posts %}
+            {% if post.tags contains "ua" %}
+            <li>
+                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    <div class="preview">
+                        <small>
+                            {{ post.excerpt }}
+                        </small>
+                    </div>
+            </li>
+            <br>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+                                                                 

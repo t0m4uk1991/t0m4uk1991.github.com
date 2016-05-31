@@ -14,48 +14,67 @@ usefull tools and commands
 {% highlight bash %}
 
 #system
-uptime #show average load in 1, 5 and 15 minutes
-top or htop #to show more detail info about processes
-ps aux #get list of processes 
-lsb_release -a #get distro data
+uptime                    #show average load in 1, 5 and 15 minutes
+top or htop               #to show more detail info about processes
+ps aux                    #get list of processes 
+lsb_release -a            #get distro data
 
 #fs
-df -h #show Disk_Free_space in human readable format
-df -i #allow to detect out of inodes problem
-du -h #show files size in human readable format
-mount -o remount,rw /home #to fix read only fs problem
+df -h                      #show Disk_Free_space in human readable format
+df -i                      #allow to detect out of inodes problem
+du -h                      #show files size in human readable format
+mount -o remount,rw /home  #to fix read only fs problem
 
 #network
 nslookup or dig #to get DNS data
 sudo netstat -tlpn #get info about ports and connected demons PIDs 
 ssh -L <local port>:<remote computer>:<remote port> <user>@<remote ip> #port forwarding
-scp username@server:/path/to/file /local/path #copy file from remote to local 
+scp username@server:/path/to/file /local/path #copy file from remote to local
 scp /local/path username@server:/path/to/file #copy file from local to remote
+nslookup or dig            #to get DNS data
+sudo netstat -tlpn         #get PIDs and related open ports
+
+#cdrom
+                            #create iso from CD/DVD disk
+dd if=/dev/cdrom of=/output/path/forYourImage.iso bs=2k
+                            
+                            #write iso image to pendrive
+sudo dd bs=4M if=[ur .iso] of=/dev/sd[that 1 letter]
+
+sudo lshw -c disk           #get some information about disks
+mkfs.vfat /dev/sdb1         #format disk to FAT32
 {% endhighlight %}
 
 awk
 ============
 {% highlight bash %}
-#Standart awk usage:
-awk '{ print $0}' filename # $0 all record, $1 first field of the record, etc
-awk '{print NF}' # filename, NF - number of fields
-#Also possible to use condition
+                            #Standart awk usage:
+awk '{ print $0}' filename  #$0 all record, $1 first field of the record, etc
+awk '{print NF}'            #filename, NF - number of fields
+                            
+                            #conditions
 awk 'NF==2 { print $1}' filename
-#awk and regexp
+                            
+                            #awk and regexp
 awk '/REGEXP/{ print $0}'
 awk '/REGEXP1/{ print $0} /REGEXP2/{ print $0}'
-#delimiters in awk
+                            
+                            #delimiters in awk
 awk -F , '{ print $0}'
 awk -F '[,!]' '{print $0}'
-#possible to specify record separator(RS) and field separator (FS)
+                            
+                            #record separator(RS) and 
+                            #field separator (FS)
 awk 'BEGIN{RS="!";FS=","} {print $1}'
-#also it possible to  specify Output Record Separator(ORS) 
-#                         and Output Field Separator(OFS)
+
+                            #Output Record Separator(ORS) and 
+                            #Output Field Separator(OFS)
 awk 'BEGIN{ORS="\n";OFS="\t";FS=","} {print $1, $2, $3}'
-#To execute awk program in file use
-awk -f program-filename data-filename
-#awk program file has .awk extension
-#example of awk program:
+
+                            #execute awk program from file
+awk -f program-filename.awk data-filename
+
+                            #example of awk program:
 BEGIN{
     print "begin"
 }
@@ -65,19 +84,17 @@ BEGIN{
 END{
     print "end"
 }
-awk '{variable="hello world"; print variable}'
-awk '{a=1; b=2; print a+b}'
-#examples
-#choose all records where first field starts with capital letter "U"
+
+                            #Examples
+                            
+                            #select all records where first field 
+                            #starts with capital letter "U"
 awk '$1 ~ /U/{print $0}' filename
+
+                            #ifelse  clause
 awk '{ if (NF>4){print "There are more then 10 entries", $0} 
        else { print "There less then 10 entries", $0}}' filename
-#awk string manipulation function
-index,match,length,substr,sub,gsub,split
-#awk math functions
-int,rand,sqrt,sin,cos,atan2,log,exp
-{% endhighlight %}>
-
+{% endhighlight %}
 vim
 ============
 {% highlight bash %}
@@ -100,4 +117,6 @@ vim
 - J      joins two lines
 - Ctrl+A / Ctrl+X increments/decrements a number.
 - ==     fix line indent
+
+#type 'm' in NerdTree vim plagin to modify current node
 {% endhighlight %}

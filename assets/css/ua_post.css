@@ -1,0 +1,116 @@
+main {
+    max-width: 48rem;
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
+}
+
+.site-title > a{
+    background:#2e3436;
+    padding:5px;
+}
+
+.site-header .site-title{
+    font-weight: 300;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 2.4rem;
+}
+
+.site-header .site-title > a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.site-header .site-nav > a{
+    color: #333;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom:2px;
+}
+
+.site-header .site-nav > a:hover{
+    text-decoration: none;
+    background: #2e3436;
+    color: white;
+}
+
+.site-header .site-nav .active {
+    border-bottom: 2px solid;
+    background: #2e3436;
+}
+
+.posts {
+    list-style: none;
+    padding: 0;
+    background-color: rgba(D0,F0,C0,0.8);
+}
+
+.posts > li {
+    line-height: 1.75;
+}
+
+.posts > li span{
+    color: #a0a0a0;
+    margin-right: 1.5rem;
+    font-size: 0.875rem;
+}
+
+.posts > li a{
+    text-decoration: none;
+}
+
+.preview{
+    color: #a0a0a0;
+}
+
+.post{
+    position: relative;
+    background-color: rgba(D0,F0,C0,0.8);
+}
+
+.post .post-header{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top:25px;
+}
+
+.post .post-meta{
+    margin: 0;
+    text-align: center;
+    color: #a0a0a0;
+    font-size: 0.875rem;
+}
+
+.about{
+    background-color: rgba(255,255,255,0.8);
+}
+
+.about-section{
+    font-size: 0.875rem;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a, center a{
+    text-decoration: none;
+}
+
+.content{
+    padding: 30 30 30 250;
+}
+
+.site-header .site-nav .active-page{
+    border-bottom: 2px solid;
+    background: #2e3436;
+    color: white;
+    text-decoration: none;
+}
+
+.not-active-page{
+    border-bottom: none;
+    text-decoration: none;
+}
