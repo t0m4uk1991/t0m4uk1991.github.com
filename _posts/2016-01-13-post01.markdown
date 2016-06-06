@@ -1,6 +1,8 @@
 ---
 title: "Привіт світ, або плани на 2016 рік"
-layout: ua_post
+layout: post
+category: Життя
+locale: ua
 tags:
 - ua
 ---

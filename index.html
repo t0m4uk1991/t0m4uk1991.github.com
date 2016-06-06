@@ -4,13 +4,23 @@ layout: default
 <div>
       <ul class="posts">
         {% for post in site.posts %}
-                {% if post.tags contains "en" %}
-                <li><span>{{ post.date | date: site.date_format }}</span><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-
-                <small>
-                    {{ post.excerpt }}
-                </small>
-
+                {% if post.locale ==  "en" %}
+                <li>
+                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    <div>
+                        <span>
+                            <small>{{ post.date | date: site.date_format }}</small>
+                        </span>
+                    </div>
+                    <small>
+                        {{ post.excerpt }}
+                    </small>
+                    <div>
+                        <span>
+                            <small>Category: {{ post.category }}</small>
+                        </span>
+                    </div>
+                    <hr/>
                 </li>
                 {% endif%}
             {% endfor %}

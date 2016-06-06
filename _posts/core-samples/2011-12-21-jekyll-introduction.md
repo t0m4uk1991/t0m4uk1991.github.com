@@ -1,8 +1,13 @@
 ---
 layout: post
 locale: en
+category: Dev
 tags:
 - en
+- code
+- github
+- life
+- rake
 ---
 
 This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.

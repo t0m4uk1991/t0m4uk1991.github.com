@@ -1,6 +1,7 @@
 ---
 layout: post
 locale: ua
+category: Життя
 tags:
 - en
 ---

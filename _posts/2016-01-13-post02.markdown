@@ -1,6 +1,8 @@
 ---
 title: "Бла бла бла"
-layout: ua_post
+layout: post
+category: Життя
+locale: ua
 tags:
 - ua
 ---

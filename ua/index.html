@@ -1,21 +1,28 @@
 ---
-layout: ua_default
+layout: default
 ---
 <div>
-    <ul class="posts">
+      <ul class="posts">
         {% for post in site.posts %}
-            {% if post.tags contains "ua" %}
-            <li>
-                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                    <div class="preview">
-                        <small>
-                            {{ post.excerpt }}
-                        </small>
+                {% if post.locale ==  "ua" %}
+                <li>
+                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    <div>
+                        <span>
+                            <small>{{ post.date | date: site.date_format }}</small>
+                        </span>
                     </div>
-            </li>
-            <br>
-            {% endif %}
-        {% endfor %}
+                    <small>
+                        {{ post.excerpt }}
+                    </small>
+                    <div>
+                        <span>
+                            <small>Категорія: {{ post.category }}</small>
+                        </span>
+                    </div>
+                    <hr/>
+                </li>
+                {% endif%}
+            {% endfor %}
     </ul>
 </div>
-                                                                 
