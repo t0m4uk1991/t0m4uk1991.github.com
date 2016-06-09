@@ -26,9 +26,10 @@ du -h                      #show files size in human readable format
 mount -o remount,rw /home  #to fix read only fs problem
 
 #network
-nslookup or dig #to get DNS data
-sudo netstat -tlpn #get info about ports and connected demons PIDs 
-ssh -L <local port>:<remote computer>:<remote port> <user>@<remote ip> #port forwarding
+nslookup or dig            #to get DNS data
+sudo netstat -tlpn         #get info about ports and connected demons PIDs
+                           #port forwarding 
+ssh -L <local port>:<remote computer>:<remote port> <user>@<remote ip>
 scp username@server:/path/to/file /local/path #copy file from remote to local
 scp /local/path username@server:/path/to/file #copy file from local to remote
 nslookup or dig            #to get DNS data
