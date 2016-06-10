@@ -1,10 +1,6 @@
 ---
 layout: post
 locale: en
-category: Dev
-tags:
-- en
-- tag
 ---
 
 This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.

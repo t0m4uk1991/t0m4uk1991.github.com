@@ -6,21 +6,10 @@ layout: default
         {% for post in site.posts %}
                 {% if post.locale ==  "ua" %}
                 <li>
-                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                    <div>
-                        <span>
-                            <small>{{ post.date | date: site.date_format }}</small>
-                        </span>
-                    </div>
-                    <small>
-                        {{ post.excerpt }}
-                    </small>
-                    <div>
-                        <span>
-                            <small>Категорія: {{ post.category }}</small>
-                        </span>
-                    </div>
-                    <hr/>
+                    <span>
+                        {{ post.date | date: site.date_format }}
+                    </span>
+                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>  
                 </li>
                 {% endif%}
             {% endfor %}

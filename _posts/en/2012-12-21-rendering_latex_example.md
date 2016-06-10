@@ -2,9 +2,6 @@
 layout: post
 locale: en
 title: Rendering LaTeX in Javascript with KaTeX and Jekyll
-category: Dev
-tags:
-- en
 permalink: latex-equation-rendering-in-javascript-with-jekyll-and-katex
 ---
 {% include katex_import.html %} 
