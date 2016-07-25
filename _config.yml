@@ -13,3 +13,5 @@ production_url : http://username.github.com
 
 permalink: /:title/
 
+gems:
+  - jekyll-sitemap
