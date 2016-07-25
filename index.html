@@ -1,17 +1,22 @@
 ---
 layout: default
 ---
-<div>
-      <ul class="posts">
-        {% for post in site.posts %}
-                {% if post.locale ==  "en" %}
-                <li>
-                    <span>
-                        {{ post.date | date: site.date_format }}
-                    </span>
-                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>  
-                </li>
-                {% endif%}
-            {% endfor %}
-    </ul>
+<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
+<div class="centered">
+  <h1>
+    Andrii Tomchuk
+  </h1>
+  <h4>
+    software engineer
+  </h4>
+  <hr>
+    <a href="https://github.com/t0m4uk1991">
+      <i class="fa fa-github" aria-hidden="true"></i>
+    </a>
+    <a href="https://ua.linkedin.com/in/andriy-tomchuk-0335a346">
+      <i class="fa fa-linkedin" aria-hidden="true"></i>
+    </a>
+    <a href="mailto:t0m4uk1991@gmail.com">
+      <i class="fa fa-envelope" aria-hidden="true"></i>
+    </a>
 </div>

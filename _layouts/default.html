@@ -11,28 +11,7 @@
 </head>
 <body>
     <div id="particlesjs"></div>
-    <div id="content">
-        <main>
-            <header class="site-header">
-                <h1 class="site-title"><a href="{{ site.baseurl }}/">
-
-                    <span class="orange-div">[</span>
-                    <span>{{site.title}}</span>
-                    <span class="orange-div">]</span>
-
-                </a></h1>
-                <nav class="site-nav">
-                     <a href="{{ site.baseurl }}/index" class="{% if page.url == '/' %}active-page{% endif %}"> home</a>
-                     
-                     <a href="{{ site.baseurl }}/notes/linux" class="{% if ((page.url == '/notes/linux/') or (page.url == '/notes/ruby/') or (page.url == '/notes/lisp/')) %}active-page{% endif %}"> notes</a>
-                     <a href="{{ site.baseurl }}/ua" class="{% if (page.url == '/ua/') %}active-page{% endif %}"> life[ua]</a>
-
-                     <a href="{{ site.baseurl }}/about" class="{% if page.url == '/about/' %}active-page{% endif %}"> about</a>
-                </nav>
-            </header>
-            {{ content }}
-        </main>
-    </div>
+    {{ content }}
     <script>
         {% if site.google_analytics %}
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -42,7 +21,7 @@
             ga('create', 'UA-57509521-1', 'auto');
             ga('send', 'pageview');
         {% endif %}
-        
+
         particlesJS.load("particlesjs", "{{ site.baseurl }}/assets/conf/particlesjs-config.json");
     </script>
 </body>

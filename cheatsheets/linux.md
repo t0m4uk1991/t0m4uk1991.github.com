@@ -1,10 +1,10 @@
 ---
-layout: notes
+layout: cheatsheets
 ---
 
 Content
 =================
-  
+
   * [usefull tools and commands](#usefulltoolsandcommands)
   * [awk](#awk)
   * [vim](#vim)
@@ -15,9 +15,14 @@ usefull tools and commands
 
 #system
 uptime                    #show average load in 1, 5 and 15 minutes
-top or htop               #to show more detail info about processes
-ps aux                    #get list of processes 
 lsb_release -a            #get distro data
+                          #install new alternative for firefox (just example)
+sudo update-alternatives --install /usr/bin/firefox firefox /home/nintendo/Downloads/firefox41/firefox/firefox 4
+                          #replace single line in file
+sed -i '/OLD_TEXT/c\NEW_TEXT' /tmp/filename
+                          #kill process by port number
+sudo kill $(sudo lsof -t -i:<port>)
+sudo -u <user_name> bash  #run command as other user
 
 #fs
 df -h                      #show Disk_Free_space in human readable format
@@ -26,9 +31,8 @@ du -h                      #show files size in human readable format
 mount -o remount,rw /home  #to fix read only fs problem
 
 #network
-nslookup or dig            #to get DNS data
 sudo netstat -tlpn         #get info about ports and connected demons PIDs
-                           #port forwarding 
+                           #port forwarding
 ssh -L <local port>:<remote computer>:<remote port> <user>@<remote ip>
 scp username@server:/path/to/file /local/path #copy file from remote to local
 scp /local/path username@server:/path/to/file #copy file from local to remote
@@ -38,7 +42,7 @@ sudo netstat -tlpn         #get PIDs and related open ports
 #cdrom
                             #create iso from CD/DVD disk
 dd if=/dev/cdrom of=/output/path/forYourImage.iso bs=2k
-                            
+
                             #write iso image to pendrive
 sudo dd bs=4M if=[ur .iso] of=/dev/sd[that 1 letter]
 
@@ -52,23 +56,23 @@ awk
                             #Standart awk usage:
 awk '{ print $0}' filename  #$0 all record, $1 first field of the record, etc
 awk '{print NF}'            #filename, NF - number of fields
-                            
+
                             #conditions
 awk 'NF==2 { print $1}' filename
-                            
+
                             #awk and regexp
 awk '/REGEXP/{ print $0}'
 awk '/REGEXP1/{ print $0} /REGEXP2/{ print $0}'
-                            
+
                             #delimiters in awk
 awk -F , '{ print $0}'
 awk -F '[,!]' '{print $0}'
-                            
-                            #record separator(RS) and 
+
+                            #record separator(RS) and
                             #field separator (FS)
 awk 'BEGIN{RS="!";FS=","} {print $1}'
 
-                            #Output Record Separator(ORS) and 
+                            #Output Record Separator(ORS) and
                             #Output Field Separator(OFS)
 awk 'BEGIN{ORS="\n";OFS="\t";FS=","} {print $1, $2, $3}'
 
@@ -87,13 +91,13 @@ END{
 }
 
                             #Examples
-                            
-                            #select all records where first field 
+
+                            #select all records where first field
                             #starts with capital letter "U"
 awk '$1 ~ /U/{print $0}' filename
 
                             #ifelse  clause
-awk '{ if (NF>4){print "There are more then 10 entries", $0} 
+awk '{ if (NF>4){print "There are more then 10 entries", $0}
        else { print "There less then 10 entries", $0}}' filename
 {% endhighlight %}
 vim
@@ -118,6 +122,9 @@ vim
 - J      joins two lines
 - Ctrl+A / Ctrl+X increments/decrements a number.
 - ==     fix line indent
+- :1,$d  delete all lines
+- :%s/foo/bar/g       replace foo with bar
+- :%s/\<foo\>/bar/gc  replace all exact ocurrence of foo with bar and ask confirmation
 
 #type 'm' in NerdTree vim plagin to modify current node
 {% endhighlight %}

@@ -1,6 +1,7 @@
 ---
 layout: post
 locale: en
+category: test
 ---
 
 This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.

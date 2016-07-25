@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div id="content">
+      <main>
+      <header class="site-header">
+          <h1 class="site-title"><a href="{{ site.baseurl }}/">
+
+              <span class="orange-div">[</span>
+              <span>{{site.title}}</span>
+              <span class="orange-div">]</span>
+
+          </a>
+          </h1>
+          <nav class="site-nav">
+              <a href="{{ site.baseurl }}/blog" class="{% if page.url == '/blog/' %}active-page{% endif %}"> home</a>
+              <a href="{{ site.baseurl }}/ua" class="{% if (page.url == '/ua/') %}active-page{% endif %}"> life[ua]</a>
+              <a href="{{ site.baseurl }}/cheatsheets/linux" class="{% if ((page.url == '/cheatsheets/linux/') or (page.url == '/cheatsheets/ruby/') or (page.url == '/cheatsheets/git/')) %}active-page{% endif %}"> cheatsheets</a>
+          </nav>
+      </header>
+        {{ content }}
+    </main>
+</div>

@@ -28,7 +28,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 300;
+    padding: 0;
+    margin: 0;
 }
 
 blockquote {
@@ -57,6 +58,18 @@ hr {
     border-top: 2px solid #ddd;
 }
 
+a i{
+  padding: 10px;
+}
+
+.align-right{
+  float: right;
+}
+
+.cheatsheet-items{
+  list-style-type: none;
+}
+
 #particlesjs{
     width: 100%;
     height: 100%;
@@ -75,4 +88,14 @@ hr {
     padding-bottom:  1rem;
     padding-top:     1rem;
     text-align:      center;
+}
+
+.centered {
+	width:270px;
+	height:150px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-75px 0 0 -135px;
+  text-align: center;
 }

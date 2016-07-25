@@ -23,22 +23,9 @@ center a:active{
 }
 
 .sidebar{
-    float:right;
-    position: fixed;
-    width: 20px;
-    height: 100%;
+    position: relative;
     font-size: 16px;
-    text-align: left;
-    line-height: 1.5;
-    color: black;
-}
-
-.notes-list{
-    line-height: 1.75;
-}
-
-.topics{
-    margin-left: -120px;
+    list-style: inline;
 }
 
 .content{

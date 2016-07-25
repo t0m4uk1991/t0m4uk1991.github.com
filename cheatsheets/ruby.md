@@ -1,14 +1,14 @@
 ---
-layout: notes
+layout: cheatsheets
 ---
 
 Content
 =================
-  
+
   * [tools](#tools)
   * [ruby](#ruby)
 
-tools 
+tools
 ============
 {% highlight bash %}
 {% endhighlight %}
@@ -17,4 +17,3 @@ ruby
 ============
 {% highlight bash %}
 {% endhighlight %}>
-
