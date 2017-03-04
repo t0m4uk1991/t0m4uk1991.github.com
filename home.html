@@ -1,0 +1,15 @@
+---
+layout: header
+---
+<div class="articles-container">
+    {% for post in site.posts %}
+    <div class="article-reference">
+        <div>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </div>
+        <div class="date">
+            {{ post.date | date: site.date_format }}
+        </div>
+      </div>
+    {% endfor %}
+</div>

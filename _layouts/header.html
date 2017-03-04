@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<div>
+      <main>
+      <header>
+          <h1><a href="{{ site.baseurl }}/">
+
+              <span class="orange">[</span>
+              <span id="name">{{site.title}}</span>
+              <span class="orange">]</span>
+
+          </a>
+          </br>
+          <blockquote style="font-size: 14px; color: black; text-align: right;" cite="http://www.worldwildlife.org/who/index.html">
+            Another one heap of trash in the internet
+          </blockquote>
+          </h1>
+          <hr>
+          <nav>
+              <a href="{{ site.baseurl }}/home" class="{% if page.url == '/home/' %}active-page{% endif %}"> home</a>
+              <span class="disabled"> | </span>
+              <a href="{{ site.baseurl }}/notes" class="{% if (page.url == '/notes/') %}active-page{% endif %}"> notes</a>
+              <span class="disabled"> | </span>
+              <a href="{{ site.baseurl }}/cv" class="{% if (page.url == '/cv/') %}active-page{% endif %}"> cv</a>
+          </nav>
+      </header>
+        {{ content }}
+    </main>
+</div>

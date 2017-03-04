@@ -1,17 +1,19 @@
 title: "t0m4uk1991"
 baseurl: ""
+date_format: "%d-%m-%Y"
+kramdown:
+  syntax_highlighter_opts:
+    disable : true
 
-date_format: "%Y-%m-%d"
+ls2menu:
+  template_name: notes.html
+  dir: notes
 
-highlighter: pygments
-
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-
+exclude: [".rvmrc", "README.md", "Rakefile", "changelog.md"]
 include: ["notes"]
-
 production_url : http://username.github.com
-
 permalink: /:title/
-
 gems:
-  - jekyll-sitemap
+  - "jekyll-sitemap"
+  - "jekyll_gpx"
+  - "jekyll_ls2menu"

@@ -1,17 +1,10 @@
 ---
-layout: cheatsheets
+layout: post
+prev: /notes
 ---
-
-Content
-=================
-
-  * [usefull commands](#usefullcommands)
-  * [workflow](#workflow)
-
-usefull commands
+git
 ============
 {% highlight bash %}
-
 git checkout hash fname1 fname2    #checkout specific files from specific commit
 git diff stash                     #compare directory with stash
 git stash --keep-index             #stash all except files added to index
@@ -24,8 +17,5 @@ git clone . /destination/folder    #clone current dir to another dir
 git bundle create fname HEAD       #create bundle from commit
 git pull fname                     #apply bundle to repo
 git apply < patch_file             #apply patch
-
+git for-each-ref --sort=taggerdate --format '%(refname) %(taggerdate)' refs/tags
 {% endhighlight %}
-
-workflow
-============

@@ -1,8 +1,14 @@
 ---
 layout: post
-locale: en
-category: test
+prev: /home
+category: jekyll
 ---
+
+<script type="text/javascript">
+  function load() {
+    window.location.hash="#";
+  }
+</script>
 
 This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.
 Directly following the intro we'll learn exactly _how_ Jekyll does what it does.

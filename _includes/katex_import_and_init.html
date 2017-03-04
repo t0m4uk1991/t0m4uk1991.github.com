@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js"></script>
+
+<script type="text/javascript">
+    var tex = document.getElementsByClassName("equation");
+    Array.prototype.forEach.call(tex, function(el) {
+        katex.render(el.getAttribute("data-expr"), el);
+    });
+</script>
+
+<!--
+... content of post here
+
+<div class="equation" data-expr="\displaystyle P(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma ^2}}"></div>
+.. more content
+-->

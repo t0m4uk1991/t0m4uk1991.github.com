@@ -1,29 +1,32 @@
 body {
-    margin: 0;
-    font-family: 'Fira Sans', Helvetica, Arial, sans-serif;;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-}
-
-p {
-    text-align: justify;
-    -webkit-margin-after: 0em;
-    -webkit-margin-before: 0.4em;
+  margin: 0 auto;
+  max-width: 45em;
+  font-size: 16px;
+  font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  padding: 4em 1em;
+  color: #333;
+  overflow-y: -moz-scrollbars-vertical;
+  overflow-y: scroll;
 }
 
 a {
-    color: #000;
-    text-decoration: none;
+  color: #333;
+  text-decoration: none;
 }
 
-.site-nav a:hover {
-    border-bottom: 1px solid #da4939;
-    text-decoration: none;
+hr {
+    width: 100%;
+    border: none;
+    border-top: 2px solid #ddd;
+}
+
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -32,42 +35,96 @@ h6 {
     margin: 0;
 }
 
-blockquote {
-    font-style: italic;
-    padding-left: 1rem;
-    border-left: 3px solid #ddd;
+header {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 4vw 2em 2em;
+  text-align: center;
 }
 
-img {
-    max-width: 100%;
+header h1 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 300;
 }
 
-pre {
-    padding-left: 1.25rem;
-    padding-top:0;
-    margin-top:0;
-    overflow-x: auto;
+header a{
+  padding: 0.125em;
 }
 
-code {
-    font-family: 'Courier New',Consolas,monopace;
+.active-page, nav a:hover {
+  border-bottom: 2px solid #da4939
 }
 
-hr {
-    border: none;
-    border-top: 2px solid #ddd;
+a i {
+    padding: 10px;
 }
 
-a i{
-  padding: 10px;
+article {
+  text-align: justify;
 }
 
-.align-right{
+article > h2, article > h2 + p.disabled  {
+  text-align: center;
+}
+
+.centered {
+  width:270px;
+	height:150px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-75px 0 0 -135px;
+  text-align: center;
+}
+
+.orange {
+  color: #da4939;
+}
+
+.disabled{
+  color: #808080;
+}
+
+.tags {
   float: right;
 }
 
-.cheatsheet-items{
-  list-style-type: none;
+.articles-container{
+  max-width: 320px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+div.article-title {
+  font-size: 18px;
+}
+
+div.article-reference {
+  margin-bottom: 30px;
+}
+
+div.date {
+  font-size: 16px;
+  color: #999;
+}
+
+#ls2menu ul, #ls2menu li {
+  list-style: none;
+}
+
+#ls2menu  li a:before{
+  font-family: FontAwesome;
+  content: "\f0f6";
+  padding-right: 10px;
+}
+
+li span:before{
+  font-family: FontAwesome;
+  content: "\f115";
+  padding-right: 10px;
 }
 
 #particlesjs{
@@ -77,25 +134,4 @@ a i{
     z-index: -10;
     top: 0;
     left: 0;
-}
-
-#content{
-    position: relative;
-    z-index: 100;
-}
-
-.equation {
-    padding-bottom:  1rem;
-    padding-top:     1rem;
-    text-align:      center;
-}
-
-.centered {
-	width:270px;
-	height:150px;
-	position:absolute;
-	left:50%;
-	top:50%;
-	margin:-75px 0 0 -135px;
-  text-align: center;
 }
