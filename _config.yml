@@ -1,5 +1,6 @@
 title: "t0m4uk1991"
 baseurl: ""
+google_analytics: true
 date_format: "%d-%m-%Y"
 kramdown:
   syntax_highlighter_opts:
